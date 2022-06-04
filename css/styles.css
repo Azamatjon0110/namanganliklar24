@@ -1,9 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 .hero{
   padding-top: 60px;
   padding-bottom: 100px;
 }
 
 .reception-sec{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .anketa{
@@ -12,9 +21,15 @@
 }
 
 .input-box{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .form-label{
   margin: 0;
@@ -31,6 +46,38 @@
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 10px;
+}
+
+.form-input::-webkit-input-placeholder{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.form-input::-moz-placeholder{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.form-input:-ms-input-placeholder{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.form-input::-ms-input-placeholder{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  opacity: 0.5;
 }
 
 .form-input::placeholder{
@@ -50,8 +97,12 @@
   resize: none;
 }
 .link-button{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .send-button{
   padding: 17px 30px;

@@ -1,11 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 /* rubik-regular - latin_cyrillic */
 @font-face {
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('../fonts/rubik-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/rubik-v20-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url('../fonts/rubik-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/rubik-v20-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* rubik-500 - latin_cyrillic */
 @font-face {
@@ -13,12 +20,13 @@
   font-style: normal;
   font-weight: 500;
   src: local(''),
-       url('../fonts/rubik-v20-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/rubik-v20-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url('../fonts/rubik-v20-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/rubik-v20-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 *{
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body{
@@ -43,17 +51,29 @@ img{
 }
 
 .header-top-inner{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-top-start{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .currency-list{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding-left: 0;
@@ -96,8 +116,12 @@ img{
 }
 
 .header-top-end{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .search-box{
@@ -115,9 +139,14 @@ img{
 }
 
 .site-languages{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 70px;
   margin-right: 25px;
   padding: 3px;
@@ -160,9 +189,15 @@ img{
 }
 
 .nav-list{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top:30px;
   padding-left: 0;
   padding-bottom: 20px;
@@ -185,8 +220,11 @@ img{
 }
 
 .news-main-list{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap:wrap;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
   padding-left: 0;
   list-style: none;
 
@@ -254,7 +292,7 @@ img{
   font-style: normal;
   padding: 0;
   margin: 0;
-  width: 140px;
+  padding: 4px 0;
   margin-left: 30px;
   font-weight: 400;
   font-size: 12px;
@@ -263,12 +301,14 @@ img{
   text-decoration: none;
 }
 
-.social-media-icon-text{
-  padding: 5px 0;
-  position: relative;
+.short-news-section{
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 50px 0;
 }
 
-.social-media-icon-tekst{
+.social-media-icon-text{
+  width: 155x;
   position: relative;
 }
 
@@ -280,6 +320,45 @@ img{
   height: 20px;
 }
 
+.full-info{
+  width: 797px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.full-information{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+}
+
+.tech-adr{
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.tech-adr::before{
+  position: absolute;
+  content: "";
+  background-position: center;
+  width: 30px;
+  height: 30px;background-repeat: no-repeat;
+  background-image: url("../images/interesting-page-photo/fbm-article.png");
+}
+
+
+.fbm-icon{
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin-left: 40px;
+  padding: 7px 0;
+  color: #5E5F61;
+}
 .social-media-icon-text::before{
   position: absolute;
   content: "";
@@ -338,10 +417,43 @@ img{
   width: 394px;
 }
 
+.pepelats-icon{
+  background-repeat: no-repeat;
+  background-image: url("../images/interesting-page-photo/pepelas.png");
+}
+
+.dns-icon{
+  background-repeat: no-repeat;
+  background-image: url("../images/interesting-page-photo/dns.png");
+}
+
+.sputnik-icon{
+  background-repeat: no-repeat;
+  background-image: url("../images/interesting-page-photo/sputnik.png");
+}
+
+.ireactor-icon{
+  background-repeat: no-repeat;
+  background-image: url("../images/interesting-page-photo/ireactor.png");
+}
+
+.kompaniya-icon{
+  background-repeat: no-repeat;
+  background-image: url("../images/interesting-page-photo/companya.png");
+}
+
+.ferghana-icon{
+  background-repeat: no-repeat;
+  background-image: url("../images/interesting-page-photo/fe.png");
+}
 
 .article{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align:left;
   list-style: none;
   margin: 0 auto;
@@ -395,6 +507,8 @@ img{
 }
 
 .other-news{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 0;
   padding: 0;
@@ -406,6 +520,8 @@ img{
 }
 
 .list-other-news{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin:0;
   padding: 0;
@@ -507,8 +623,8 @@ img{
   border-bottom: 1px solid #D2D2D2;
 }
 .btm{
-  margin-bottom: 25px;
-  border-bottom: 0px solid #000;
+  margin-bottom: 0px;
+  /* border-bottom: 1px solid #000; */
 }
 
 .short-news-title{
@@ -520,7 +636,7 @@ img{
   margin: 0;
   padding: 0;
   margin-top: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -532,7 +648,7 @@ img{
 .short-news-address{
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -547,10 +663,10 @@ img{
   margin-top: 10px;
   margin-left: 10px;
 }
-
+/*
 .botm{
   margin-bottom: 25px;
-}
+} */
 
 .footer{
   background-color: #7297EF;
@@ -573,6 +689,8 @@ img{
 
 
 .ft-nav{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -623,9 +741,15 @@ img{
 }
 
 .sotial-medias{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .action-entry-link{
   padding: 0;
@@ -642,9 +766,51 @@ img{
   list-style: none;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .sm-item{
   margin-left: 25px;
+}
+
+.tesla-title{
+  margin: 0;
+  padding: 0;
+  padding-top: 36px;
+  padding-bottom: 20px;
+}
+
+.tesla-info{
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.b{
+  padding-bottom: 0;
+}
+
+.intnews-section{
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.int{
+  margin-bottom: 0;
+}
+
+.middle-news{
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.middle-news:nth-child(3){
+  margin-right: 0;
 }
