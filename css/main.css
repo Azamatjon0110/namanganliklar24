@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 /* rubik-regular - latin_cyrillic */
 @font-face {
   font-family: 'Rubik';
@@ -119,23 +126,37 @@ img{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.search-box{
-  width: 275px;
+
+.header-input{
+  width:276px;
   margin-right: 25px;
   padding-top: 15px;
   padding-bottom: 13px;
   padding-left: 41px;
   border-radius: 60px;
   background-color: #fff;
-  color: #8D8D8D;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  border:none;
+  outline: none;
+}
+.search-box{
+  position: relative;
+}
+
+.search-box::before{
+  position: absolute;
+  content:"";
+  top: 14px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-image: url("../images/search-icon.svg");
 }
 
 .site-languages{
