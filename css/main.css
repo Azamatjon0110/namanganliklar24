@@ -351,7 +351,7 @@ img{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
+  padding-top: 50px;
 }
 
 .tech-adr{
@@ -643,7 +643,7 @@ img{
   margin-bottom: 20px;
   border-bottom: 1px solid #D2D2D2;
 }
-.btm{
+.botm{
   margin-bottom: 0px;
   border-bottom: 0px solid #000;
 }
@@ -679,7 +679,9 @@ img{
   color: #5E5F61;
 }
 
-
+.shna{
+  padding-bottom: 0;
+}
 .new-home-ad{
   margin: 0;
   padding: 0;
